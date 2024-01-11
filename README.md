@@ -32,3 +32,5 @@ The next step is
 - create the repository in GitHub and keep the same name that local 
   and continue with the steps what show GitHub: example start with 
   the command git init after add the file readme.md, etc
+
+- 

@@ -1,32 +1,36 @@
-import React from 'react';
-import { TodoCounter } from './TodoCounter';
-import { TodoSearch } from './TodoSearch';
-import { TodoList } from './TodoList';
+import React from "react";
+import { TodoCounter } from "./TodoCounter";
+import { TodoSearch } from "./TodoSearch";
+import { TodoList } from "./TodoList";
+import { TodoItem } from "./TodoItem";
+import { TodoButton } from "./TodoButton";
 
-export default function App(){
-  return(
+const defaultTodos = [
+  {text: 'Jugar con Estebitan', completed: true},
+  {text: 'Leer con Martin', completed: false},
+  {text: 'Lavar la losa', completed: true},
+  {text: 'Clean the house', completed: false},
+];
+
+export default function App() {
+  return (
     <>
-      <TodoCounter/>
-      <TodoSearch/>
+      <TodoCounter total={5} completed={3}/>
+      <TodoSearch />
+      {/* <TodoList>
+        <TodoItem />
+      </TodoList> */}
       <TodoList>
-        <TodoItem/>
-        <TodoItem/>
-        <TodoItem/>
+        {defaultTodos.map(todo => (
+          <TodoItem 
+            key={todo.text} 
+            text={todo.text}
+            completed={todo.completed}
+          />
+        ))}
       </TodoList>
-      
-      <CreateTodoButton/>
-    </>
-  )
-}
 
-function TodoItem() {
-  return(
-    <ul>
-      <li>
-        <p>V</p>
-        <span>Pruebas de TodoList</span>
-        <p>X</p>
-      </li>
-    </ul>
+      <TodoButton/>
+    </>
   );
 }
