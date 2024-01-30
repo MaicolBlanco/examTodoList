@@ -33,4 +33,4 @@ The next step is
   and continue with the steps what show GitHub: example start with 
   the command git init after add the file readme.md, etc
 
-- 
+- I detent because I feel what I need practice more, because the course isn't   good, for be basic couse, so I create other file for the tests where I practice the basic concepts, how to use the hooks (useState)
