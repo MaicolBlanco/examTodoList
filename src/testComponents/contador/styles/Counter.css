@@ -1,0 +1,22 @@
+.container-global{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #1b1b32;
+  font-family: Lato, sans-serif;
+}
+
+.title-principal{
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.container-principal{
+  height: 350px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

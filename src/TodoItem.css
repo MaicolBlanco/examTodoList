@@ -11,25 +11,19 @@
 .icon-check {
   cursor: pointer;
   margin: 0;
-  padding: 4px;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  color: gold;
 }
 
 .icon-check-active {
   cursor: pointer;
   margin: 0;
-  padding: 4px;
-  background-color: green;
-  border: none;
-  border-radius: 4px;
+  color: #4bf24b;
 }
 
 .todo-item-text {
   margin: 0;
   padding: 0 8px;
-  flex: 1; /* Este estilo hace que el texto ocupe el espacio restante */
+  flex: 1; 
 }
 
 .todo-item-text-completed {
@@ -41,9 +35,11 @@
 .icon-delete {
   cursor: pointer;
   margin: 0;
-  padding: 4px;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  size: 20px;
+  color: tomato;
+}
+:hover.icon-delete{
+  color: red;
+  font-size: 24px;
 }
 

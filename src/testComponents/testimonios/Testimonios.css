@@ -1,0 +1,6 @@
+.card-description {
+  display: flex;
+  border: 1px solid gray;
+  margin: 5px;
+  box-shadow: 0 3px 13px 10px gainsboro;
+}
