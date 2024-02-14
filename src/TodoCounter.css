@@ -2,10 +2,12 @@
   font-size: 24px;
   text-align: center;
   margin: 0;
-  padding: 48px;
+  padding: 30px;
   font-weight: normal;
+  color: rgb(80, 17, 229);
 }
 
 .todo-counter span {
+  color: rgba(41, 8, 63, 0.759);
   font-weight: bold;
 }

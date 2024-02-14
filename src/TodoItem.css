@@ -1,11 +1,17 @@
+.todo-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .todo-item {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: beige;
   border: 1px solid #ccc;
   margin: 8px 0;
   padding: 8px;
+  color: black;
+  width: 400px;
 }
 
 .icon-check {

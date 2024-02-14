@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+.container-nav {
+  width: 550px;
+  height: 91px;
+  background-color: #21222A;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-react{
+  color: #61DAFB;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 22px;
+  display: flex;
+}
+
+.extra-title {
+  color: #DEEBF8;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  display: flex;
+}
+

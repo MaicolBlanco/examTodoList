@@ -4,11 +4,7 @@ import { TodoSearch } from "./TodoSearch";
 import { TodoList } from "./TodoList";
 import { TodoItem } from "./TodoItem";
 import { TodoButton } from "./TodoButton";
-import { Zpruebas } from "./testComponents/Zpruebas";
-import Zcount from "./testComponents/Zcount";
-import ZlistaDinamic from "./testComponents/ZlistaDinamic";
-import ToggleComponent from "./testComponents/ToggleComponent";
-import TestComponents from "./testComponents/TestComponents";
+import Test from "./tests/Tests";
 
 const defaultTodos = [
   { text: "Jugar con Estebitan", completed: true },
@@ -49,13 +45,10 @@ export default function App() {
   //console.log("searchValue: ", searchValue);
 
   return (
-    <>
-      <TestComponents />
+    <div style={{backgroundColor: "olive"}}>
+      {/* <Test /> */}
       <TodoCounter total={totalTodos} completed={completedTodos} />
       <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
-      {/* <TodoList>
-        <TodoItem />
-      </TodoList> */}
       <TodoList>
         {searchedTodos.map((todo) => (
           <TodoItem
@@ -69,10 +62,6 @@ export default function App() {
       </TodoList>
 
       <TodoButton />
-      <Zpruebas names={"Martin y Esteban"} />
-      <Zcount />
-      <ZlistaDinamic />
-      <ToggleComponent />
-    </>
+    </div>
   );
 }
