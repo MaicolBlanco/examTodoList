@@ -8,12 +8,13 @@ import {
   TodosLoading,
   TodosError,
   EmptyTodos,
+  Modal,
 } from "../Components";
 import { TodoContext } from "../TodoContext";
 import Tests from "../Tests/Tests";
 
 function AppUI() {
-  const { loading, error, searchedTodos, completeTodo, deleteTodo } =
+  const { loading, error, searchedTodos, completeTodo, deleteTodo, openModal, setOpenModal } =
     React.useContext(TodoContext);
 
   return (
@@ -37,6 +38,11 @@ function AppUI() {
         ))}
       </TodoList>
       <TodoButton />
+      {openModal && (
+        <Modal>
+          La funcionalidad de agregar un TODO
+        </Modal>
+      )}
     </div>
   );
 }

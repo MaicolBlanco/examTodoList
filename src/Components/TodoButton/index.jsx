@@ -1,15 +1,20 @@
 import React from "react";
 import "./TodoButton.css";
+import { TodoContext } from "../../TodoContext";
 
-function TodoButton() {
+export function TodoButton() {
+  const {openModal, setOpenModal} = React.useContext(TodoContext);
+
   return (
     <div className="continainer-button">
       <button
         className="todo-button"
         onClick={(event) => {
-          console.log("Click");
-          console.log(event);
-          console.log(event.target);
+          // console.log(event.target);
+          {setOpenModal(!openModal)}
+          // () => {
+          //   setOpenModal(state => !state);
+          // }
         }}
       >
         +
@@ -17,5 +22,3 @@ function TodoButton() {
     </div>
   );
 }
-
-export { TodoButton };
