@@ -9,6 +9,7 @@ import {
   TodosError,
   EmptyTodos,
   Modal,
+  TodoForm,
 } from "../Components";
 import { TodoContext } from "../TodoContext";
 import Tests from "../Tests/Tests";
@@ -18,7 +19,7 @@ function AppUI() {
     React.useContext(TodoContext);
 
   return (
-    <div style={{ backgroundColor: "olive" }}>
+    <div style={{ backgroundColor: "olive", minHeight:"800px"}}>
       <Tests />
       <TodoTitle />
       <TodoSearch />
@@ -40,7 +41,7 @@ function AppUI() {
       <TodoButton />
       {openModal && (
         <Modal>
-          La funcionalidad de agregar un TODO
+          <TodoForm/>
         </Modal>
       )}
     </div>

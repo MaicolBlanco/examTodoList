@@ -16,7 +16,7 @@ function TodoSearch() {
     <div className="todo-search-container">
       <input
         className="todo-search-input"
-        placeholder="Ingresar Tarea"
+        placeholder="Buscar Tarea"
         value={searchValue}
         onChange={handleChange}
       />
